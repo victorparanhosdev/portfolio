@@ -110,8 +110,6 @@ ul {
 main {
     /*animation: downtop 1.2s ease 300ms backwards;*/
 
-    transform: translateX(-20%);
-    transition: opacity 0.4s, transform 0.4s;
 }
 
 
