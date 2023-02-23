@@ -1,6 +1,7 @@
 //ScrollReveal: Animation Scroll
 
 const sr = ScrollReveal({
+  duration: 900,
   delay: 200,
   easing: 'ease',
   distance: '5rem',
