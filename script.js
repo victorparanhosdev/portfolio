@@ -1,55 +1,24 @@
+//ScrollReveal: Animation Scroll
 
-
-const header = ScrollReveal({
+const sr = ScrollReveal({
     duration: 700,
     delay: 200,
     easing: 'ease-out',
     distance: '30px',
-    origin: 'top',
     reset: false,
+    interval: 100
   });
 
-  header.reveal('header', {
-    interval: 100,
+  sr.reveal('header', {
+    origin: 'top'
   });
-
-
-  
-const box1 = ScrollReveal({
-    duration: 700,
-    delay: 300,
-    easing: 'ease-out',
-    distance: '30px',
-    origin: 'rightt',
-    reset: false,
+  sr.reveal('.box-model-1', {
+    origin: 'right',
   });
-
-  box1.reveal('.box-model-1', {
-    interval: 100,
-  });
-
-const box2 = ScrollReveal({
-    duration: 700,
-    delay: 300,
-    easing: 'ease-out',
-    distance: '30px',
+  sr.reveal('.box-model-2', {
     origin: 'left',
-    reset: false,
   });
-  
-box2.reveal('.box-model-2', {
-    interval: 100,
-  });
-
-const boxz = ScrollReveal({
-    duration: 700,
-    delay: 300,
-    easing: 'ease-out',
-    distance: '30px',
+  sr.reveal('.box-model-3, .box-model-4, .box-model-5', {
     origin: 'bottom',
-    reset: false,
   });
 
-  boxz.reveal('.box-model-3, .box-model-4, .box-model-5', {
-    interval: 100,
-  });
