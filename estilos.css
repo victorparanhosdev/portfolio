@@ -42,21 +42,7 @@ body * {
 
 body {
   font-size: 1.6rem;
-  background: linear-gradient(45deg, var(--dark-color), hsl(0, 0%, 2%));
-  animation: gradient 10s ease infinite;
-  background-size: 200%;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background: var(--dark-color);
 }
 
 ul {
@@ -76,18 +62,26 @@ ul {
   font-weight: 500;
   color: var(--white-color);
   background: transparent;
-  transition: background 0.2s linear;
   cursor: pointer;
-  border-radius: 0.4rem;
-  border: 2px solid var(--root-color);
-  z-index: 1;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0.1rem 0.7rem var(--root-color);
   position: relative;
 }
 
+.btn-padrao::after {
+  position: absolute;
+  border-radius: 0.6rem;
+  inset: 0;
+  content: "";
+  width: 100%;
+  background: linear-gradient(0deg, var(--dark-color)-10%, var(--root-color-hover)250%);
+  z-index: -1;
+  opacity: 0;
+  transition: all ease 300ms;
+}
 
-
-.btn-padrao:hover {
-  background: var(--root-color);
+.btn-padrao:hover::after {
+ opacity: 1;
 }
 
 .btn-padrao i {
@@ -338,11 +332,11 @@ ul.btn-menus li:hover a::after {
   display: grid;
   align-content: space-between;
   padding: 2rem 2.5rem;
-
+  z-index: 0;
   background: var(--gray-200-color);
   border: 1px solid var(--gray-400-color);
   transition: transform 0.2s;
-  box-shadow: 0px 1rem 0.7rem -1rem var(--gray-color);
+  box-shadow: 0px 0px 0.7rem -1rem var(--gray-color);
 }
 .layout-wrapper-3 > div img {
   width: 100%;
@@ -367,6 +361,17 @@ ul.btn-menus li:hover a::after {
   font-weight: 400;
   color: var(--gray-color);
 }
+.layout-wrapper-3 > div .btn-view .btn-padrao::after{
+  background: linear-gradient(0deg, var(--gray-200-color)-10%, var(--root-color-hover)250%)
+}
+
+.layout-wrapper-3 > div .btn-view .btn-padrao{
+  box-shadow: none;
+  border: 0.1rem solid var(--root-color);
+}
+
+
+
 
 .btn-view {
   display: flex;
