@@ -100,7 +100,10 @@ ul {
   height: 7rem;
   /*animation: downtop 1.2s ease 300ms backwards;*/
 }
-
+.logo img {
+  width: 15rem;
+  display: block;
+}
 .logo {
   font-size: 2.6rem;
   font-weight: 700;
