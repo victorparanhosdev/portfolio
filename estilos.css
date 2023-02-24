@@ -64,7 +64,7 @@ ul {
   background: transparent;
   cursor: pointer;
   border-radius: 0.8rem;
-  box-shadow: 0px 0.1rem 0.7rem var(--root-color);
+  box-shadow: 0px 1px 0.4rem var(--root-color), 0px -1px 0.4rem var(--root-color);
   position: relative;
 }
 
@@ -74,10 +74,11 @@ ul {
   inset: 0;
   content: "";
   width: 100%;
-  background: linear-gradient(0deg, var(--dark-color)-10%, var(--root-color-hover)250%);
+  background: linear-gradient(0deg, var(--dark-color)5%, var(--root-color)300%);
+  
   z-index: -1;
   opacity: 0;
-  transition: all ease 300ms;
+  transition: opacity linear 200ms;
 }
 
 .btn-padrao:hover::after {
@@ -361,14 +362,17 @@ ul.btn-menus li:hover a::after {
   font-weight: 400;
   color: var(--gray-color);
 }
-.layout-wrapper-3 > div .btn-view .btn-padrao::after{
-  background: linear-gradient(0deg, var(--gray-200-color)-10%, var(--root-color-hover)250%)
-}
+
 
 .layout-wrapper-3 > div .btn-view .btn-padrao{
-  box-shadow: none;
-  border: 0.1rem solid var(--root-color);
+  box-shadow: 0px 1px 0.2rem var(--root-color), 0px -1px 0.2rem var(--root-color);
+
 }
+.layout-wrapper-3 > div .btn-view .btn-padrao::after{
+  background: linear-gradient(0deg, var(--gray-200-color)-5%, var(--root-color)300%);
+}
+
+
 
 
 
