@@ -311,6 +311,7 @@ ul.btn-menus li:hover a::after {
 }
 .btn-links-2 li:hover {
   transform: translateY(-0.5rem);
+  filter: brightness(1.5);
 }
 
 /* Section 3 */
@@ -343,7 +344,7 @@ ul.btn-menus li:hover a::after {
   width: 100%;
   height: 13rem;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   background: var(--dark-color);
 }
 
@@ -462,6 +463,7 @@ ul.btn-menus li:hover a::after {
   place-content: center;
   font-size: 8rem;
   color: var(--root-color);
+  border-radius: 0.2rem;
   animation: lighton 5s ease-in-out infinite;
 }
 
