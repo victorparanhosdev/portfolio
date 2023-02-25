@@ -176,7 +176,7 @@ ul.btn-menus li:hover a::after {
   width: 100%;
   height: 0.1rem;
   background-color: var(--white-color);
-  transition: all 0.2s;
+  transition: all 0.3s;
 
 }
 
@@ -565,12 +565,6 @@ footer p {
 
 @media (min-width: 280px) and (max-width:425px) {
 
-  .container {
-    padding-inline: 2rem;
-
- 
-  }
-
   .img-ilustration{
     display: none;
   }
@@ -665,7 +659,7 @@ footer p {
 
   }
   .img-perfil {
-    margin-top: 2rem;
+    margin-top: 7.1rem;
     max-width: 15rem;
     border-width: 1rem;
     display: block;
@@ -673,6 +667,9 @@ footer p {
   }
   .aside-wrapper-2>h2, .aside-wrapper-2 p:nth-child(2) {
     text-align: center;
+  }
+  .title-h2{
+    margin-top: 7.1rem;
   }
 
   .pragraph-2 {
@@ -786,5 +783,8 @@ footer p {
   }
   section:has(#myskills) {
     min-height: auto;
+  
   }
+
+  
 }
