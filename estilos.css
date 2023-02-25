@@ -593,7 +593,7 @@ footer p {
     left: -20rem;
     width: 100%;
     height: calc(100vh + 7rem);
-    background-color: black;
+    background: var(--dark-color);
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
