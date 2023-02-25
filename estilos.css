@@ -665,7 +665,10 @@ footer p {
 
   }
   .img-perfil {
-   display: none;
+    margin-top: 2rem;
+    max-width: 15rem;
+    border-width: 1rem;
+    display: block;
 
   }
   .aside-wrapper-2>h2, .aside-wrapper-2 p:nth-child(2) {
