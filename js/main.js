@@ -10,32 +10,18 @@ const sr = ScrollReveal({
 
 });
 
-sr.reveal('.header', {
-  origin: 'top',
-});
-
-sr.reveal('.box-model-1 div:first-child', {
+sr.reveal('header', {
   origin: 'left',
 });
 
-sr.reveal('.img-ilustration', {
+sr.reveal('div.txt-wrapper-1, .paragraph-1, .img-mao, div.box-model-1, .btn-githuber, .btn-linkedin', {
   origin: 'right',
   distance: '10rem',
-  scale:0.9,
+
 });
 
-sr.reveal('.img-perfil', {
-  origin: 'left',
-  distance: '10rem',
-  scale:0.9,
-});
 
-sr.reveal('.aside-wrapper-2', {
-  origin: 'right',
-});
-
-sr.reveal('.box-model-3, .box-model-4, .box-model-5', {
-  scale:0.9,
+sr.reveal('#about, .title-h2, .layout-wrapper-3 > div, .wrapper-4 > div, .wrapper-5 > i', {
   origin: 'bottom',
   distance: '5rem'
 });
