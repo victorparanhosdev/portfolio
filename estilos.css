@@ -657,7 +657,7 @@ footer p {
     padding: 0;
     flex-direction: column;
     gap: 2rem;
-    height: calc(80vh + 7rem);
+    height: calc(90vh + 7rem);
 
   }
   .img-perfil {
