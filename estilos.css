@@ -561,11 +561,12 @@ footer p {
     margin: auto 2rem;
   }
 
-  .img-ilustration,
-  .img-perfil {
+  .img-ilustration{
     display: none;
   }
-
+  section {
+    min-height: 100vh;
+  }
   .icon-menu-mobile {
     display: block;
   }
@@ -632,8 +633,27 @@ footer p {
 
 
   .box-model-1 {
-    height: 100vh;
+    padding: 0;
     justify-content: center;
+    height: 100vh;
+  }
+  .box-model-2{
+    padding: 0;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+   
+
+  }
+  .img-perfil {
+    margin-top: 2rem;
+    max-width: 15rem;
+    border-width: 1rem;
+    display: block;
+
+  }
+  .aside-wrapper-2>h2, .aside-wrapper-2 p:nth-child(2) {
+    text-align: center;
   }
 
   .pragraph-2 {
@@ -710,5 +730,6 @@ footer p {
 
   footer {
     font-size: 1.2rem;
+  
   }
 }
