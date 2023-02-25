@@ -568,9 +568,7 @@ footer p {
   .img-ilustration{
     display: none;
   }
-  section {
-    min-height: 100vh;
-  }
+
   .icon-menu-mobile {
     display: flex;
     flex-direction: column;
@@ -651,18 +649,11 @@ footer p {
   .box-model-1 {
     padding: 0;
     justify-content: center;
-    height: calc(100vh - 7rem);
+    height: calc(80vh + 10rem);
   }
-  section:has(.box-model-2){
-    min-height: auto
-    height: calc(100vh - 7rem);
-    display: grid;
-    place-content: center;
-    
-    }
+
     
   .box-model-2{
-    padding: 0;
     flex-direction: column;
     gap: 2rem;
 
