@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="./js/scroll.js"></script>
+    <!--<script src="./js/scroll.js"></script>-->
     <script src="./js/fontawesome.js" crossorigin="anonymous"></script>
     <script src="./js/main.js" type="module" defer></script>
     <link rel="stylesheet" href="estilos.css">
@@ -19,43 +19,39 @@
 
 <body>
     <header>
+        <nav class="container">
+            <div class="box-menu">
+                <h1 class="logo">Paranhos</h1>
 
-        <div class="header container">
-            <h1 class="logo">
-             Paranhos
-            </h1>
-            <nav id="menu">
-                <ul class="btn-menus">
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#projects">Projetos</a> </li>
-                    <li><a href="#services">Serviços</a> </li>
-                    <li><a href="#myskills">Meus Skills</a></li>
-                </ul>
-            </nav>
+                <menu>
+                    <ul class="btn-menus">
+                        <li><a href="#about">Sobre mim</a></li>
+                        <li><a href="#projects">Projetos</a> </li>
+                        <li><a href="#services">Serviços</a> </li>
+                        <li><a href="#myskills">Meus Skills</a></li>
+                    </ul>
+                </menu>
 
-            <div class="icon-menu-mobile">
-                <div class="line-one"></div>
-                <div class="line-two"></div>
-                <div class="line-three"></div>
+                <div class="icon-menu-mobile">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
             </div>
-        </div>
-
+        </nav>
     </header>
 
     <main>
-
         <section class="container">
-
             <div class="box-model-1">
-
                 <div>
-
                     <div class="txt-wrapper-1">
-
-                        <h1 class="title-h1">Olá, eu sou Victor Paranhos<img class="img-mao" src="./assets/maoacenando.png" alt=""></h1> 
+                        <div class="txt-welcome">
+                            <h1 class="title-h1">Olá, eu sou <span>Victor Paranhos</span></h1><img class="img-mao" src="./assets/maoacenando.png" alt="">
+                        </div>
+                       
+                        
                         <p class="paragraph-1">Desenvolvedor Front-End</p>
-
-
                     </div>
 
                     <div class="btn-wrapper-1">
@@ -122,11 +118,9 @@
                
 
             </div>
-
         </section>
 
         <section class="container">
-
             <div id="about" class="box-model-2">
             
                 <img class="img-perfil" src="./assets/imgperfil.jpg" alt="foto de Victor">
@@ -169,18 +163,10 @@
 
 
             </div>
-
-
         </section>
-
         <section class="container">
-
-
             <div id="projects" class="box-model-3">
-
-
                 <h2 class="title-h2">Projetos</h2>
-
                 <div class="layout-wrapper-3">
                     <div>
                         <img src="./assets/rocket-nfts.jpeg" alt="imagem randomica">
@@ -241,18 +227,11 @@
 
 
             </div>
-
-
-
         </section>
-
         <section class="container">
-
             <div id="services" class="box-model-4">
                 <h2 class="title-h2">Serviços</h2>
-
                 <div class="wrapper-4">
-
                     <div>
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M37.3333 42L51.3333 28L37.3333 14" stroke="#00DF5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -283,11 +262,8 @@
                 </div>
 
             </div>
-
         </section>
-
         <section class="container">
-
             <div id="myskills" class="box-model-5">
                 <h2 class="title-h2">Meus Skills</h2>
 
@@ -303,24 +279,11 @@
 
 
             </div>
-
         </section>
-
-
-
-
-
-
-
-
-
     </main>
-
     <footer>
         <p>&copy;2023 - Victor Paranhos</p>
     </footer>
-
-
 
 </body>
 

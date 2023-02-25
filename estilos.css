@@ -41,6 +41,7 @@ body * {
 }
 
 body {
+
   font-size: 1.6rem;
   background: var(--dark-color);
 }
@@ -50,14 +51,16 @@ ul {
 }
 
 .container {
-  width: min(95%, 114rem);
+  max-width: 114rem;
   margin: auto;
 }
 
 .btn-padrao {
+  white-space: nowrap;
   font-size: 1.4rem;
-  width: max-content;
-  padding: 1.2rem 2.7rem;
+  width: 14.3rem;
+  height: 4.2rem;
+  padding: 1.2rem 1.8rem;
   text-align: center;
   font-weight: 500;
   color: var(--white-color);
@@ -65,24 +68,32 @@ ul {
   cursor: pointer;
   border-radius: 0.8rem;
   box-shadow: 0px 1px 0.4rem var(--root-color), 0px -1px 0.4rem var(--root-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
   position: relative;
 }
 
-.btn-padrao::after {
+.btn-padrao::before {
   position: absolute;
   border-radius: 0.6rem;
   inset: 0;
   content: "";
-  width: 100%;
   background: linear-gradient(0deg, var(--dark-color)5%, var(--root-color)300%);
-
   z-index: -1;
+  visibility: hidden;
+  overflow: hidden;
   opacity: 0;
-  transition: opacity linear 200ms;
+  z-index: -1;
+  transition-property: opacity, visibility;
+  transition: linear 200ms;
 }
 
-.btn-padrao:hover::after {
+.btn-padrao:hover::before {
   opacity: 1;
+  visibility: visible;
+
 }
 
 .btn-padrao i {
@@ -93,12 +104,12 @@ ul {
 
 /* Menu */
 
-.header {
+.box-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7rem;
-  /*animation: downtop 1.2s ease 300ms backwards;*/
+
 }
 
 .logo {
@@ -148,7 +159,7 @@ ul.btn-menus li:hover a::after {
 
   display: none;
   place-items: center;
-  z-index: 0;
+
 }
 
 .icon-menu-mobile div+div {
@@ -199,13 +210,14 @@ ul.btn-menus li:hover a::after {
 .title-h1 {
   font-size: 3.6rem;
   font-weight: 700;
+  display: inline;
 }
 
 .img-mao {
   width: 3.2rem;
   margin-left: 2rem;
   animation: acenar 0.8s ease-in-out infinite;
-  position: relative;
+
 
 }
 
@@ -356,7 +368,6 @@ ul.btn-menus li:hover a::after {
   display: grid;
   align-content: space-between;
   padding: 2rem 2.5rem;
-  z-index: 0;
   background: var(--gray-200-color);
   border: 1px solid var(--gray-400-color);
   transition: transform 0.2s;
@@ -395,7 +406,7 @@ ul.btn-menus li:hover a::after {
 
 }
 
-.layout-wrapper-3>div .btn-view .btn-padrao::after {
+.layout-wrapper-3>div .btn-view .btn-padrao::before {
   background: linear-gradient(0deg, var(--gray-200-color)-5%, var(--root-color)300%);
 }
 
@@ -556,131 +567,17 @@ footer p {
 
 @media (min-width: 320px) and (max-width:425px) {
 
+
   .container {
-    width: 100%;
+    margin: auto 2rem;
   }
 
-  main {
-    width: 95%;
-    margin: auto;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .header {
-    height: 6rem;
-    padding: 0 2rem;
-
-  }
-
-  .logo {
-    font-size: 1.4rem;
-
-
-  }
-
-  header {
-
-    position: fixed;
-    top: 0;
-    left: 0;
-
-
-    width: 100vw;
-
-    background: var(--dark-color);
-    border-bottom: 1px solid var(--root-color);
-  }
-
-
-  nav#menu {
-    position: fixed;
-    top: 6.1rem;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-    background-color: black;
-    opacity: 0;
-    visibility: hidden;
-
-
-  }
-
-  ul.btn-menus {
-    display: grid;
-    place-items: center;
-    margin-top: 2rem;
-
-  }
-
-  .icon-menu-mobile {
-    display: block;
-
-  }
-
-  .box-model-1 {
-    padding-top: 9rem;
-    display: block;
-  }
-
-  .title-h1 {
-    font-size: 2.4rem;
-  }
-
-  .txt-wrapper-1 {
-    text-align: center;
-  }
-
-  .btn-wrapper-1 {
-    justify-content: center;
-  }
-
-  .img-mao {
-    margin: auto;
-    display: block;
-  }
-
+  .img-ilustration,
   .img-perfil {
     display: none;
   }
 
-  .aside-wrapper-2>h2 {
-    font-size: 2.4rem;
-  }
-
-  .pragraph-2 {
-    font-size: 1.4rem;
-  }
-
-  .btn-links-2 {
-    justify-content: center;
-  }
-
-  .btn-wrapper-2 {
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .btn-padrao {
-    width: 14rem;
-    height: 4rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  ul.btn-menus li a {
-    display: block;
-  }
-
-  .img-ilustration {
-    display: none;
-  }
-
-  .box-model-2 {
+  .icon-menu-mobile {
     display: block;
   }
 
@@ -693,43 +590,136 @@ footer p {
     display: block;
   }
 
-  svg {
-    width: 3.5rem;
+
+  menu {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 7rem);
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
   }
 
-  .wrapper-4>div h1 {
-    font-size: 1.4rem;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: var(--dark-color);
+    border-bottom: 1px solid var(--gray-200-color);
   }
 
-  .wrapper-4>div {
-    height: 14rem;
-    justify-items: center;
+  .txt-wrapper-1 {
+    max-width: none;
+    text-align: center;
+
+  }
+
+
+  .img-mao {
+    display: none;
+  }
+
+  .title-h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.8rem;
+
+  }
+
+
+  .paragraph-1 {
+    margin-bottom: 4rem;
+  }
+
+  .title-h1 span {
+    font-size: 3.5rem;
+    font-weight: 900;
+    display: block;
+  }
+
+
+  .box-model-1 {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .pragraph-2 {
+    font-size: 1.5rem;
+
+  }
+
+  .layout-wrapper-3>div .btn-view .btn-padrao {
+    padding: 1rem;
+  }
+
+  .layout-wrapper-3>div {
+    padding: 1.8rem;
+  }
+
+  .btn-wrapper-2 {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .btn-padrao {
+    width: 100%;
+
+  }
+
+  .btn-links-2 {
+    justify-content: center;
+  }
+
+  ul.btn-menus {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
   }
 
   .wrapper-4 {
-    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+  .wrapper-4>div {
+    width: 100%;
+    justify-items: center;
+    height: 18rem;
+    gap: 4rem;
+
+  }
+
+  .wrapper-4>div h1 {
+    font-size: 2.8rem;
+  }
+
+  svg {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: block;
+  }
+
+  .box-model-1 div:first-child {
+    width: 100%;
   }
 
   .wrapper-5 {
     display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.1rem;
-    grid-template-columns: repeat(3, 1fr);
+
   }
 
   .wrapper-5>i {
-    height: 9rem;
     width: 100%;
-    font-size: 5rem;
-
-  }
-
-  .title-h2 {
-    font-size: 2.4rem;
   }
 
   footer {
-    margin-top: 5.6rem;
     font-size: 1.2rem;
   }
-
 }
