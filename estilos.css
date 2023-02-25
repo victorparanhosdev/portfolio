@@ -651,7 +651,7 @@ footer p {
   .box-model-1 {
     padding: 0;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 7rem);
   }
   .box-model-2{
     padding: 0;
