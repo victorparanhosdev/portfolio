@@ -653,13 +653,14 @@ footer p {
     justify-content: center;
     height: calc(100vh - 7rem);
   }
+  section:has(.box-model-2){
+    min-height: auto
+    }
   .box-model-2{
     padding: 0;
     flex-direction: column;
     gap: 2rem;
-    height: 100%;
-    justify-content: center
-
+    height: calc(100vh + 7rem);
 
   }
   .img-perfil {
