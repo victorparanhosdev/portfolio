@@ -647,9 +647,9 @@ footer p {
     padding-inline: 1rem;
   }
   .box-model-1 {
-    padding: 7rem 0 0;
+    padding: 0;
     justify-content: center;
-    height: calc(76vh + 7rem);
+    height: calc(80vh + 7rem);
   }
 
     
