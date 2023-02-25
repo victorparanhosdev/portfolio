@@ -656,11 +656,13 @@ footer p {
   section:has(.box-model-2){
     min-height: auto
     height: calc(100vh - 7rem);
+    display: grid;
+    place-content: center;
     
     }
     
   .box-model-2{
-    padding: 7.1rem 0 0;
+    padding: 0;
     flex-direction: column;
     gap: 2rem;
 
