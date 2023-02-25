@@ -645,24 +645,24 @@ footer p {
     max-width: 28rem;
   }
 
-
+  .box-menu{
+    padding-inline: 1rem;
+  }
   .box-model-1 {
     padding: 0;
     justify-content: center;
     height: 100vh;
   }
   .box-model-2{
-    padding: 0;
     flex-direction: column;
-    display: grid;
-    place-content: center;
     gap: 2rem;
-    height: 100vh;
 
 
   }
   .img-perfil {
-  display: none;
+    max-width: 15rem;
+    border-width: 1rem;
+    display: block;
 
   }
   .aside-wrapper-2>h2, .aside-wrapper-2 p:nth-child(2) {

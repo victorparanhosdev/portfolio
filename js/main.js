@@ -39,6 +39,14 @@ for(let ListMenu of listMenu){
 }
 
 
+const botaoParanhos = document.querySelector(".logo")
+
+botaoParanhos.addEventListener("click", ()=> {
+  document.body.style.overflow = 'initial'
+  document.querySelector(".box-menu").classList.remove("active")
+})
+
+
 
 for(let MenuMobile of menuMobile){
   let confirm = true
