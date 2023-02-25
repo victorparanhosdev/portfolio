@@ -654,15 +654,15 @@ footer p {
   .box-model-2{
     padding: 0;
     flex-direction: column;
+    display: grid;
+    place-content: center;
     gap: 2rem;
+    height: 100vh;
 
 
   }
   .img-perfil {
-    margin-top: 7.1rem;
-    max-width: 15rem;
-    border-width: 1rem;
-    display: block;
+  display: none;
 
   }
   .aside-wrapper-2>h2, .aside-wrapper-2 p:nth-child(2) {
