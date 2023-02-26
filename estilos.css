@@ -657,10 +657,13 @@ footer p {
     flex-direction: column;
     justify-content: center;
   }
-  
+  .box-model-1{
+    margin-top: -7.1rem;
+    
+  }
 
   .box-model-1 > div:first-child {
-    margin-top: -7.1rem;
+    
     width: 100%;
   }
 
