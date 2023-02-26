@@ -193,7 +193,7 @@ ul.btn-menus li:hover a::after {
 /* Section 1 */
 
 .box-model-1 {
-  padding: 7rem 0 2rem;
+  padding: 7.1rem 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -285,7 +285,7 @@ ul.btn-menus li:hover a::after {
 }
 
 .box-model-2 {
-  padding: 7rem 0 2rem;
+  padding: 7.1rem 0 2rem;
   display: flex;
   align-items: center;
   gap: 7rem;
@@ -652,18 +652,15 @@ footer p {
     background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
     width: 100%;
     padding-inline: 2rem;
-
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .box-model-1 {
-    padding-top: 7.6rem;
   
-  }
 
   .box-model-1 > div:first-child {
-
-    margin-top: 9rem;
+    margin-top: -7.1rem;
     width: 100%;
   }
 
@@ -674,7 +671,7 @@ footer p {
 
   }
   .box-model-2{
-    padding: 7.6rem 0 2rem;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -684,7 +681,7 @@ footer p {
   .img-perfil {
     max-width: 15rem;
     border-width: 1rem;
-    margin: 2rem auto;
+    margin: 2.2rem auto;
     display: block;
 
   }
