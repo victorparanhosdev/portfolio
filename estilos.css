@@ -655,7 +655,7 @@ footer p {
     
   .box-model-2{
     border-top: 1px solid var(--gray-200-color);
-    padding: 7rem 0 0;
+    padding: 7.2rem 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
