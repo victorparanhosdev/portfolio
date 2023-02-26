@@ -649,7 +649,7 @@ footer p {
   .box-model-1 {
 
     justify-content: center;
-    min-height: calc(100vh - 7.1rem);
+    min-height: 100vh;
    
 
   }
@@ -659,28 +659,34 @@ footer p {
     background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
     width: 100%;
     padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
   }
 
   section:has(div.box-model-2){
     background: radial-gradient(circle at bottom, var(--dark-color) 87%, var(--root-color-hover) 174%);
-
-  
     width: 100%;
     padding-inline: 2rem;
+
   }
   .box-model-2{
     padding: 7.6rem 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 0;
+  
+    
 
 
   }
+
+
   .img-perfil {
     max-width: 15rem;
     border-width: 1rem;
-    margin-bottom: 4rem;
+    margin: 2rem auto;
     display: block;
 
   }
