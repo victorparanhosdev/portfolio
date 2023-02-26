@@ -648,7 +648,7 @@ footer p {
   }
   .box-model-1 {
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 7rem);
 
   }
 
