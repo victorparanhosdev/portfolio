@@ -28,18 +28,27 @@ sr.reveal('#about, .title-h2, .layout-wrapper-3 > div, .wrapper-4 > div, .wrappe
 
 
 const menuMobile = document.querySelectorAll(".icon-menu-mobile")
-
 const listMenu = document.querySelectorAll(".btn-menus")
+const header = document.querySelector("header")
+const heightHeader = header.offsetHeight
+const botaoParanhos = document.querySelector(".logo")
 
 for(let ListMenu of listMenu){
   ListMenu.onclick = () => {
     document.querySelector(".box-menu").classList.remove("active")
-    document.body.style.overflow = 'initial'
+    let confirm = (document.body.style.overflow == 'hidden')
+  
+
+    if(confirm){
+      document.body.style.overflow = 'initial'
+   
+    }else {
+      document.body.style.overflow = 'hidden'
+    
+    }
   } 
 }
 
-
-const botaoParanhos = document.querySelector(".logo")
 
 botaoParanhos.addEventListener("click", ()=> {
   document.body.style.overflow = 'initial'
@@ -49,25 +58,28 @@ botaoParanhos.addEventListener("click", ()=> {
 
 
 for(let MenuMobile of menuMobile){
-  let confirm = true
+
 
   MenuMobile.onclick = () => {
     
-    document.querySelector(".box-menu").classList.toggle("active")
-    
+    document.querySelector(".box-menu").classList.toggle("active") 
+    let confirm = (document.body.style.overflow == 'hidden')
+  
+
     if(confirm){
-      document.body.style.overflow = 'hidden'
-      confirm = false
-    }else {
       document.body.style.overflow = 'initial'
-      confirm = true
+   
+    }else {
+      document.body.style.overflow = 'hidden'
+    
     }
+
   }
 
+ 
+
 }
-const header = document.querySelector("header")
-const heightHeader = header.offsetHeight
-console.dir(header.offsetHeight)
+
 
 
 window.addEventListener("scroll", ()=> {
