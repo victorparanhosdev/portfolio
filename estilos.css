@@ -654,31 +654,17 @@ footer p {
 
   }
 
-  @keyframes backgroundanimation{
 
-    0%{
-      background-size: 100%;
-    }
-    50%{
-      background-size: 200%;
-      background-position: top;
-    }
-
-    100%{
-      background-size: 100%;
-     
-    }
-  }
   section:has(div.box-model-1){
     background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
     width: 100%;
     padding-inline: 2rem;
-    animation: backgroundanimation 8s alternate infinite;
+
   }
 
   section:has(div.box-model-2){
     background: radial-gradient(circle at bottom, var(--dark-color) 87%, var(--root-color-hover) 174%);
-    animation: backgroundanimation 8s alternate infinite;
+
   
     width: 100%;
     padding-inline: 2rem;
