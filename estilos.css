@@ -646,23 +646,25 @@ footer p {
   .box-menu{
     padding-inline: 1rem;
   }
-  .box-model-1 {
-
-    justify-content: center;
-    height: 100vh;
-   
-
-  }
 
 
   section:has(div.box-model-1){
     background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
     width: 100%;
     padding-inline: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
+    height: 100vh;
+
+  }
+  .box-model-1 {
+    padding-top: 7.6rem;
+  
+  }
+
+  .box-model-1 > div:first-child {
+
+    margin-top: 9rem;
+    width: 100%;
   }
 
   section:has(div.box-model-2){
@@ -676,10 +678,6 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 0;
-  
-    
-
-
   }
 
 
@@ -755,9 +753,7 @@ footer p {
     display: block;
   }
 
-  .box-model-1 div:first-child {
-    width: 100%;
-  }
+  
 
   .wrapper-5 {
     display: grid;
