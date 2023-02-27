@@ -6,7 +6,6 @@
 }
 
 :root {
-  --var-color: 2;
   --var-color: 210;
   font-size: 62.5%;
   --white-color: hsl(0, 0%, 95%);
@@ -446,7 +445,7 @@ footer p {
   background: var(--root-color);
   border-radius: 1rem;
 }
-@media (min-width: 280px) and (max-width:525px) {
+@media (min-width: 280px) and (max-width:540px) {
   .img-ilustration{
     display: none;
   }
@@ -632,7 +631,7 @@ footer p {
     display: block;
   }
 }
-@media (min-width: 375px) and (max-width: 525px) {
+@media (min-width: 375px) and (max-width: 540px) {
   .wrapper-5{
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -652,3 +651,54 @@ footer p {
   }
   
 }
+
+@media (max-width: 1240px){
+  .layout-wrapper-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 2rem;
+  }
+ 
+  .wrapper-4>div h1 {
+    font-size: 2.2rem;
+  }
+  .wrapper-4{
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1124px){
+  .wrapper-5{
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper-5{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    height: auto;
+  }
+  .title-h1 {
+    font-size: 3rem;
+  }
+  .title-h1 span {
+    font-size: 4.1rem;
+  }
+  .txt-welcome{
+    max-width: fit-content;
+  }
+  .paragraph-1{
+    font-size: 2rem;
+  }
+
+}
+@media (max-width: 732px){
+  .layout-wrapper-3 {
+    grid-template-columns: repeat(1, 1fr);
+ 
+  }
+}
+
+
+
