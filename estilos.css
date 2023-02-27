@@ -831,7 +831,7 @@ footer p {
 
   .box-model-1 {
     justify-content: center;
-    text-align: center;
+ 
   }
 
   .wrapper-4>div {
@@ -858,5 +858,7 @@ footer p {
         var(--dark-color) 87%,
         var(--root-color-hover) 174%);
   }
+ 
+
 
 }
