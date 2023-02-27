@@ -796,7 +796,6 @@ footer p {
     display: block;
   }
 }
-
 @media (min-width: 375px) and (max-width: 768px) {
   .wrapper-5{
     grid-template-columns: repeat(3, 1fr);
@@ -817,7 +816,6 @@ footer p {
   }
   
 }
-
 @media (max-width: 1124px){
   .wrapper-5{
     gap: 2rem;
@@ -840,7 +838,6 @@ footer p {
     gap: 2rem;
   }
 }
-
 @media (max-width: 732px){
   .layout-wrapper-3 {
     grid-template-columns: repeat(1, 1fr);
