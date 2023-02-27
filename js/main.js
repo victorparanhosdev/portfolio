@@ -28,7 +28,7 @@ sr.reveal('#about, .title-h2, .layout-wrapper-3 > div, .wrapper-4 > div, .wrappe
 
 
 const menuMobile = document.querySelectorAll(".icon-menu-mobile")
-const listMenu = document.querySelectorAll(".btn-menus")
+const listMenu = document.querySelectorAll(".btn-menus li a")
 const header = document.querySelector("header")
 const heightHeader = header.offsetHeight
 const botaoParanhos = document.querySelector(".logo")
