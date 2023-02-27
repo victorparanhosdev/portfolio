@@ -563,7 +563,7 @@ footer p {
   border-radius: 1rem;
 }
 
-@media (min-width: 280px) and (max-width:425px) {
+@media (min-width: 280px) and (max-width:525px) {
 
   .img-ilustration{
     display: none;
@@ -798,7 +798,7 @@ footer p {
   }
 }
 
-@media (min-width: 375px) and (max-width:425px) {
+@media (min-width: 375px) and (max-width: 525px) {
   .wrapper-5{
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
