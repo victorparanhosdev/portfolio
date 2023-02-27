@@ -119,14 +119,15 @@ ul.btn-menus {
 }
 
 ul.btn-menus li a {
-  padding: 0.8rem 0;
+  padding: 1.8rem 0;
   font-size: 1.8rem;
   position: relative;
-  filter: brightness(0.8);
+  display: block;
+
 }
 
 ul.btn-menus li:hover a {
-  filter: brightness(1.2);
+  filter: brightness(2);
 }
 
 ul.btn-menus li a::after {
@@ -762,9 +763,6 @@ footer p {
     box-shadow: 0px 0px 0.8rem var(--root-color);
   }
 
-  ul.btn-menus li a {
-    display: block;
-  }
 }
 
 @media (min-width: 375px) and (max-width: 428px) {

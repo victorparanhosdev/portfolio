@@ -33,60 +33,68 @@ const header = document.querySelector("header")
 const heightHeader = header.offsetHeight
 const botaoParanhos = document.querySelector(".logo")
 
-for(let ListMenu of listMenu){
+for (let ListMenu of listMenu) {
+
   ListMenu.onclick = () => {
     document.querySelector(".box-menu").classList.remove("active")
-    let confirm = (document.body.style.overflow == 'hidden')
-  
+    document.body.style.overflow = 'initial'
 
-    if(confirm){
-      document.body.style.overflow = 'initial'
-   
-    }else {
-      document.body.style.overflow = 'hidden'
-    
+
+    if (header.style.position == 'fixed') {
+      let confirm = (document.body.style.overflow == 'hidden')
+
+      if (confirm) {
+        document.body.style.overflow = 'initial'
+
+      } else {
+        document.body.style.overflow = 'hidden'
+
+      }
+
     }
-  } 
+
+
+  }
 }
 
 
-botaoParanhos.addEventListener("click", ()=> {
+botaoParanhos.addEventListener("click", () => {
   document.body.style.overflow = 'initial'
   document.querySelector(".box-menu").classList.remove("active")
 })
 
 
 
-for(let MenuMobile of menuMobile){
+for (let MenuMobile of menuMobile) {
 
 
   MenuMobile.onclick = () => {
-    
-    document.querySelector(".box-menu").classList.toggle("active") 
-    let confirm = (document.body.style.overflow == 'hidden')
-  
 
-    if(confirm){
+    document.querySelector(".box-menu").classList.toggle("active")
+    let confirm = (document.body.style.overflow == 'hidden')
+
+
+    if (confirm) {
       document.body.style.overflow = 'initial'
-   
-    }else {
+
+    } else {
       document.body.style.overflow = 'hidden'
-    
+
     }
 
   }
 
- 
+
 
 }
 
 
 
-window.addEventListener("scroll", ()=> {
+window.addEventListener("scroll", () => {
 
-  if(window.scrollY > heightHeader) {
+  if (window.scrollY > heightHeader) {
     header.classList.add("scroll")
-  }else {
+  } else {
     header.classList.remove("scroll")
   }
 
