@@ -589,7 +589,12 @@ footer p {
   .layout-wrapper-3>div {
     display: block;
   }
-
+  .btn-padrao {
+    width: 100%;
+    height: auto;
+    padding: 1.4rem 1rem;
+    display: inline-block;
+  }
 
   menu {
     position: absolute;
@@ -669,6 +674,9 @@ footer p {
   }
  
   .box-model-1 > div:first-child {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
     margin: 10rem auto;
     width: 100%;
   }
@@ -717,8 +725,6 @@ footer p {
     gap: 2rem;
     justify-content: center;
   }
-
-
 
   .btn-links-2 {
     justify-content: center;
