@@ -42,6 +42,7 @@ body * {
 
 body {
 
+
   font-size: 1.6rem;
   background: var(--dark-color);
 }
@@ -51,8 +52,9 @@ ul {
 }
 
 .container {
-  width: min(95%, 114rem);
+  width: min(97%, 120rem);
   margin: auto;
+
 }
 
 .btn-padrao {
@@ -358,7 +360,7 @@ ul.btn-menus li:hover a::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 3.2rem 4.5rem;
+  gap: 3.2rem 4.5rem
 }
 
 .layout-wrapper-3>div {
@@ -436,7 +438,7 @@ ul.btn-menus li:hover a::after {
 }
 
 .wrapper-4>div {
-  width: min(100%, 35rem);
+  width: 100%;
   height: 24rem;
   padding: 3rem;
   background: var(--gray-200-color);
@@ -563,7 +565,11 @@ footer p {
   border-radius: 1rem;
 }
 
-@media (min-width: 280px) and (max-width:525px) {
+
+
+
+
+@media (min-width: 280px) and (max-width:768px) {
 
   .img-ilustration{
     display: none;
@@ -656,6 +662,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .box-model-1{
     margin-top: -7.1rem;
@@ -663,7 +670,7 @@ footer p {
   }
 
   .box-model-1 > div:first-child {
-    
+  
     width: 100%;
   }
 
@@ -712,13 +719,7 @@ footer p {
     justify-content: center;
   }
 
-  .btn-padrao {
-    width: 100%;
-    height: auto;
-    padding: 1.4rem 1rem;
-    display: inline-block;
 
-  }
 
   .btn-links-2 {
     justify-content: center;
@@ -736,9 +737,7 @@ footer p {
   }
 
   .wrapper-4>div {
-    width: 100%;
-    justify-items: center;
-    height: 18rem;
+
     gap: 4rem;
 
   }
@@ -798,7 +797,7 @@ footer p {
   }
 }
 
-@media (min-width: 375px) and (max-width: 525px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .wrapper-5{
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -817,4 +816,35 @@ footer p {
     font-size: 2rem;
   }
   
+}
+
+@media (max-width: 1124px){
+  .wrapper-5{
+    gap: 2rem;
+  }
+
+}
+@media (max-width: 1240px){
+  .layout-wrapper-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 2rem;
+  }
+
+ 
+  .wrapper-4>div h1 {
+    font-size: 2.2rem;
+  }
+  .wrapper-4{
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 732px){
+  .layout-wrapper-3 {
+    grid-template-columns: repeat(1, 1fr);
+ 
+  }
+
 }
