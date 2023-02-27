@@ -664,13 +664,12 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  .box-model-1{
-    margin-top: -7.1rem;
-    
+  .box-model-1 {
+    padding: 0;
   }
-
+ 
   .box-model-1 > div:first-child {
-
+    margin: 10rem auto;
     width: 100%;
   }
 
