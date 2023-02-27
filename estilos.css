@@ -658,7 +658,7 @@ footer p {
     background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
     width: 100%;
     padding-inline: 2rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -670,7 +670,7 @@ footer p {
   }
 
   .box-model-1 > div:first-child {
-  
+
     width: 100%;
   }
 
