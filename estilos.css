@@ -606,6 +606,9 @@ footer p {
 }
 
 @media (max-width: 650px) {
+  .box-model-1{
+    margin-top: 0;
+  }
  .img-ilustration{
   display: none;
  }
@@ -694,18 +697,7 @@ svg {
     font-size: 1.5rem;
   }
 
-  .title-h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 2.8rem;
-  }
 
-
-  .title-h1 span {
-    font-size: 3.2rem;
-    font-weight: 900;
-    display: block;
-  }
 
   .box-menu {
     padding-inline: 1rem;
@@ -717,13 +709,14 @@ svg {
     gap: 2rem;
     justify-content: center;
   }
-  .layout-wrapper-3>div .btn-view .btn-padrao{
-    width: 100%;
-  }
+ 
   .btn-padrao {
-   
+    width: 45%;
     height: auto;
     padding: 1.4rem 1rem;
+  }
+  .layout-wrapper-3>div .btn-view .btn-padrao{
+    width: 100%;
   }
   .img-perfil{
     width: 15rem;
@@ -731,9 +724,7 @@ svg {
   .img-mao{
     right: 0;
   }
-  .box-model-1{
-    margin-top: 0;
-  }
+
   footer {
     font-size: 1.2rem;
   }
