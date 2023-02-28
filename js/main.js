@@ -35,28 +35,20 @@ const botaoParanhos = document.querySelector(".logo")
 const divMenu = document.querySelector(".box-menu")
 
 for (let ListMenu of listMenu) {
-
   ListMenu.onclick = () => {
     const isTopFixed = header.style.position == 'fixed'
     divMenu.classList.remove("active")
-
     document.body.style.overflow = 'initial'
-
-
     if (isTopFixed) {
       let isClassHidden = document.body.style.overflow == 'hidden'
-
       if (isClassHidden) {
         document.body.style.overflow = 'initial'
-
       } else {
         document.body.style.overflow = 'hidden'
 
       }
 
     }
-
-
   }
 }
 
@@ -67,15 +59,10 @@ botaoParanhos.addEventListener("click", () => {
 })
 
 
-
 for (let MenuMobile of menuMobile) {
 
-
   MenuMobile.onclick = () => {
-
     divMenu.classList.toggle("active")
-
-
     let isClassHidden = document.body.style.overflow == 'hidden'
     
     if (isClassHidden) {
@@ -95,11 +82,25 @@ for (let MenuMobile of menuMobile) {
 
 
 window.addEventListener("scroll", () => {
-
   if (window.scrollY > heightHeader) {
     header.classList.add("scroll")
   } else {
     header.classList.remove("scroll")
   }
-
+ 
 })
+
+
+window.onresize = ()=> {
+  console.log(widthScreen)
+  if (widthScreen > 690) {
+    let isClassHidden = document.body.style.overflow == 'hidden'
+    if (isClassHidden) {
+    document.body.style.overflow = 'initial';
+    divMenu.classList.remove("active");
+  }
+}
+
+
+};
+
