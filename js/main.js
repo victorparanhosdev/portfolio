@@ -37,6 +37,7 @@ for (let ListMenu of listMenu) {
 
   ListMenu.onclick = () => {
     document.querySelector(".box-menu").classList.remove("active")
+    
     document.body.style.overflow = 'initial'
 
 
