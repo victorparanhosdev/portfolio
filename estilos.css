@@ -599,16 +599,21 @@ footer p {
     justify-content: center;
   }
 
-
+  .box-model-1 > div:first-child{
+    margin: 5rem auto;
+  
+  }
   .title-h2 {
     margin-top: 7.1rem;
   }
 }
 
 @media (max-width: 650px) {
+
   .box-model-1{
-    margin-top: 0;
+    padding: 0;
   }
+
  .img-ilustration{
   display: none;
  }
@@ -693,6 +698,9 @@ svg {
 }
 
 @media (max-width: 428px) {
+  .logo {
+    font-size: 2.2rem;
+  }
   .pragraph-2 {
     font-size: 1.5rem;
   }
@@ -701,6 +709,7 @@ svg {
   }
 
 .box-model-1 > div:first-child{
+
   width: 100vw;
 }
   .box-menu {
