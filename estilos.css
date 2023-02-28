@@ -671,24 +671,15 @@ footer p {
     margin: 2.5rem auto;
     display: block;
   }
-  .box-model-2{
-    padding: 0;
-  }
 
   section:has(div.box-model-2) {
     background: radial-gradient(circle at bottom,
         var(--dark-color) 87%,
         var(--root-color-hover) 174%);
 
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
- 
   }
 
-  .aside-wrapper-2>h2 {
-    margin-bottom: 2.5rem;
-  }
+  
 
   .aside-wrapper-2>h2,
   .aside-wrapper-2 p:nth-child(2) {
@@ -827,9 +818,6 @@ footer p {
     font-size: 2.2rem;
   }
 
-  .pragraph-2 {
-    font-size: 1.5rem;
-  }
 
   .txt-wrapper-1 {
     width: auto;
