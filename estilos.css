@@ -243,7 +243,7 @@ ul.btn-menus li:hover a::after {
   gap: 1.5rem;
 }
 .img-perfil {
-  margin: 2.2rem auto;
+  margin: 2.5rem auto;
   object-fit: cover;
   width: clamp(15rem, 24vw + 5rem, 36rem);
   border-radius: 50%;
@@ -458,6 +458,10 @@ footer p {
   .img-perfil{
     border-width: 1.5rem;
   }
+  .img-perfil {
+    margin: 3rem auto
+  
+  }
 }
 @media (max-width: 768px){
   .wrapper-4 {
@@ -467,10 +471,11 @@ footer p {
   .box-model-2{
     gap: 4rem;
   }
-
-  .img-perfil{
-    border-width: 1.5rem;
+  .img-perfil {
+    margin: 3.5rem auto
+  
   }
+
 }
 
 @media (max-width: 690px){
@@ -636,7 +641,9 @@ footer p {
     display: flex;
     flex-direction: column;
   }
- 
+  .img-perfil {
+    margin: 2.2rem auto;
+  }
   
   .txt-wrapper-1 {
     max-width: none;
