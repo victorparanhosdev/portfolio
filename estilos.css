@@ -243,7 +243,7 @@ ul.btn-menus li:hover a::after {
   gap: 1.5rem;
 }
 .img-perfil {
-  margin: 2.5rem auto;
+  margin: auto;
   object-fit: cover;
   width: clamp(15rem, 24vw + 5rem, 36rem);
   border-radius: 50%;
@@ -512,6 +512,9 @@ footer p {
     border-bottom: 0.1rem solid var(--gray-200-color);
     padding-inline: 1rem;
   }
+  ul.btn-menus li a{
+    font-size:  2.5rem;
+  }
 
   .box-menu.active .icon-menu-mobile .line-one {
     transform: rotate(-45deg) translate(-0.2rem, 0.2rem);
@@ -533,13 +536,21 @@ footer p {
   }
   ul.btn-menus li a {
     display: block;
+    text-align: center;
+  }
+
+  menu:has(ul.btn-menus){
+    height: calc(100vh - 7.1rem);
+    overflow: auto
   }
   ul.btn-menus {
     display: grid;
-    place-items: center;
-    margin-top: 2rem;
-    gap: 3rem;
+    place-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
   }
+
+
   .title-h2{
     margin-top: 7.1rem;
   }
