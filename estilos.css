@@ -666,16 +666,24 @@ footer p {
   }
 
   .img-perfil {
-    max-width: 20rem;
+    max-width: 14rem;
     border-width: 1rem;
-    margin: 2.2rem auto;
+    margin: 2.5rem auto;
     display: block;
+  }
+  .box-model-2{
+    padding: 0;
   }
 
   section:has(div.box-model-2) {
     background: radial-gradient(circle at bottom,
         var(--dark-color) 87%,
         var(--root-color-hover) 174%);
+
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+ 
   }
 
   .aside-wrapper-2>h2 {
