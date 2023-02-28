@@ -234,7 +234,7 @@ ul.btn-menus li:hover a::after {
 .box-model-2 {
   padding: 7.1rem 0 2rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 7rem;
   justify-content: space-between;
 }
@@ -243,6 +243,7 @@ ul.btn-menus li:hover a::after {
   gap: 1.5rem;
 }
 .img-perfil {
+  margin: 2.2rem auto;
   object-fit: cover;
   width: clamp(15rem, 24vw + 5rem, 36rem);
   border-radius: 50%;
@@ -453,6 +454,11 @@ footer p {
   border-radius: 1rem;
 }
 
+@media (max-width:1000px){
+  .img-perfil{
+    border-width: 1.5rem;
+  }
+}
 @media (max-width: 768px){
   .wrapper-4 {
     display: grid;
@@ -561,12 +567,27 @@ footer p {
     display: block;
   }
   .img-mao {
+    width: clamp(2.8rem, 5vw + 2rem, 4.2rem);
     position: absolute;
     top: 0;
-    right: 1.5rem;
+    right: 1rem;
   }
   .txt-welcome{
     text-align: center;
+  }
+
+
+  section:has(div.box-model-1){
+    background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
+ 
+  }
+  .box-model-1{
+    padding: 0;
+  
   }
   .box-model-2{
     justify-content: center;
@@ -577,7 +598,7 @@ footer p {
   .img-perfil {
     width: 15rem;
     border-width: 1rem;
-    margin: 2.2rem auto;
+  
     display: block;
   }
 
@@ -621,33 +642,11 @@ footer p {
     max-width: none;
     text-align: center;
   }
-  .img-mao {
-    position: absolute;
-    top: 0;
-    right: 1.5rem;
-  }
+
   .title-h1 {
     text-align: center;
     font-weight: 400;
     font-size: 2.8rem;
-  }
-
-
-  .txt-welcome{
-    max-width: 28rem;
-  }
-
-  section:has(div.box-model-1){
-    background: radial-gradient(circle at top, var(--dark-color) 87%, var(--root-color-hover) 174%);
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-
- 
-  }
-  .box-model-1{
-    padding: 0;
-  
   }
 
   .box-model-1 > div:first-child {
@@ -692,7 +691,7 @@ footer p {
   }
   
   .wrapper-5 {  
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
  
 
@@ -703,14 +702,15 @@ footer p {
   .aside-wrapper-2>h2 {
     margin-top: 0;
   }
-  .paragraph-1 {
-    margin-bottom: 4rem;
-  }
-  .txt-welcome{
-    max-width: fit-content;
-  }
+
   .paragraph-1{
     font-size: 2rem;
   }
   
+}
+
+@media (max-width: 375px){
+  .wrapper-5 {  
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
