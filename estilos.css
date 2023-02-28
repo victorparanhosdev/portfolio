@@ -644,7 +644,7 @@ footer p {
 }
 
 .txt-welcome {
-  max-width: 32rem;
+
   text-align: center;
 }
 .title-h1 {
@@ -696,27 +696,30 @@ svg {
   .pragraph-2 {
     font-size: 1.5rem;
   }
+  .txt-wrapper-1{
+    width: auto;
+  }
 
-
-
+.box-model-1 > div:first-child{
+  width: 100vw;
+}
   .box-menu {
     padding-inline: 1rem;
   }
 
   .btn-wrapper-2 {
     margin: auto;
-    max-width: 40rem;
     gap: 2rem;
     justify-content: center;
   }
- 
+  .layout-wrapper-3>div .btn-view .btn-padrao{
+    width: 100%;
+  }
+
   .btn-padrao {
     width: 45%;
     height: auto;
     padding: 1.4rem 1rem;
-  }
-  .layout-wrapper-3>div .btn-view .btn-padrao{
-    width: 100%;
   }
   .img-perfil{
     width: 15rem;
