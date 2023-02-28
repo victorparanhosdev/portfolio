@@ -32,19 +32,21 @@ const listMenu = document.querySelectorAll(".btn-menus li a")
 const header = document.querySelector("header")
 const heightHeader = header.offsetHeight
 const botaoParanhos = document.querySelector(".logo")
+const divMenu = document.querySelector(".box-menu")
 
 for (let ListMenu of listMenu) {
 
   ListMenu.onclick = () => {
-    document.querySelector(".box-menu").classList.remove("active")
-    
+    const isTopFixed = header.style.position == 'fixed'
+    divMenu.classList.remove("active")
+
     document.body.style.overflow = 'initial'
 
 
-    if (header.style.position == 'fixed') {
-      let confirm = (document.body.style.overflow == 'hidden')
+    if (isTopFixed) {
+      let isClassHidden = document.body.style.overflow == 'hidden'
 
-      if (confirm) {
+      if (isClassHidden) {
         document.body.style.overflow = 'initial'
 
       } else {
@@ -61,7 +63,7 @@ for (let ListMenu of listMenu) {
 
 botaoParanhos.addEventListener("click", () => {
   document.body.style.overflow = 'initial'
-  document.querySelector(".box-menu").classList.remove("active")
+  divMenu.classList.remove("active")
 })
 
 
@@ -71,11 +73,12 @@ for (let MenuMobile of menuMobile) {
 
   MenuMobile.onclick = () => {
 
-    document.querySelector(".box-menu").classList.toggle("active")
-    let confirm = (document.body.style.overflow == 'hidden')
+    divMenu.classList.toggle("active")
 
 
-    if (confirm) {
+    let isClassHidden = document.body.style.overflow == 'hidden'
+    
+    if (isClassHidden) {
       document.body.style.overflow = 'initial'
 
     } else {
