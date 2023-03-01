@@ -31,7 +31,7 @@ const menuMobile = document.querySelectorAll(".icon-menu-mobile")
 const listMenu = document.querySelectorAll(".btn-menus li a")
 const header = document.querySelector("header")
 const heightHeader = header.offsetHeight
-const botaoParanhos = document.querySelector(".logo-mobile")
+const botaoParanhos = document.querySelector(".logo")
 const divMenu = document.querySelector(".box-menu")
 
 for (let ListMenu of listMenu) {

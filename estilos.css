@@ -105,11 +105,11 @@ ul {
   height: 7rem;
 }
 
-.logo-mobile {
+.logo {
   width: 6rem;
-  display: flex;
 }
-.logo-mobile svg [fill="black"]{
+
+.logo svg [fill="black"]{
   fill: var(--root-foto-logo);
 
 }
