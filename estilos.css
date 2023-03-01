@@ -108,15 +108,16 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.logo svg [fill="black"]{
+  fill: var(--root-foto-logo);
+}
+
+.logo svg {
   width: 6rem;
   height: 6rem;
 }
 
-.logo svg [fill="black"]{
-  fill: var(--root-foto-logo);
-
-
-}
 
 ul.btn-menus {
   display: flex;
