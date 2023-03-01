@@ -34,6 +34,7 @@ a {
   padding: 0.5rem;
   clip-path: circle();
   opacity: 0;
+  z-index: 2;
   visibility: hidden;
   transition-property: opacity, visibility, bottom;
   transition-duration: 700ms;
