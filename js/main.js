@@ -43,7 +43,7 @@ const heightOneDiv = OneDiv.offsetHeight
 window.addEventListener('scroll', () => {
 
   if(window.scrollY >= heightOneDiv){
-    Setinha.style = 'opacity: 0.7; visibility: visible; bottom: 3rem';
+    Setinha.style = 'opacity: 0.7; visibility: visible; bottom: 2.5rem';
 
     
   }
