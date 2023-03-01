@@ -105,15 +105,9 @@ ul {
   height: 7rem;
 }
 
-.logo {
-  font-size: 2.6rem;
-  font-weight: 700;
-  text-shadow: 0.2rem 0.2rem var(--root-foto-perfil), 0.2rem -0.2rem var(--root-foto-perfil), -0.2rem 0.2rem var(--root-foto-perfil), -0.2rem -0.2rem var(--root-foto-perfil), 0.2rem 0px var(--root-foto-perfil), 0px 0.2rem var(--root-foto-perfil), -0.2rem 0px var(--root-foto-perfil), 0px -0.2rem var(--root-foto-perfil), 0.1rem 0.1rem 6px rgba(13,38,64,0);
-
-}
 .logo-mobile {
-  width: 5rem;
-  display: none;
+  width: 6rem;
+  display: flex;
 }
 .logo-mobile svg [fill="black"]{
   fill: var(--root-foto-logo);
@@ -157,15 +151,15 @@ ul.btn-menus li:hover a::after {
 
 /* Menu Mobile */
 .icon-menu-mobile {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3.5rem;
+  height: 100%;
   display: none;
   place-items: center;
   cursor: pointer;
 }
 
 .icon-menu-mobile div+div {
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
 .line-one,
@@ -573,12 +567,6 @@ footer p {
 
 }
 @media (max-width: 690px) {
-  .logo {
-    display: none;
-  }
-  .logo-mobile{
-    display: flex;
-  }
   .aside-wrapper-2>h2 {
     margin-top: 2rem;
   }
@@ -615,16 +603,16 @@ footer p {
   }
 
   ul.btn-menus li a {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .box-menu.active .icon-menu-mobile .line-one {
-    transform: rotate(-45deg) translate(-0.2rem, 0.2rem);
+    transform: rotate(-45deg) translate(-0.4rem, 0.35rem);
   }
 
   .box-menu.active .icon-menu-mobile .line-two {
     width: 100%;
-    transform: rotate(45deg) translate(-0.2rem, -0.2rem);
+    transform: rotate(45deg) translate(-0.3rem, -0.2rem);
   }
 
   .box-menu.active .icon-menu-mobile .line-three {
@@ -698,7 +686,7 @@ footer p {
   .img-mao {
     width: clamp(2.8rem, 5vw + 2rem, 4.2rem);
     position: absolute;
-    top: 0;
+    top: -0.5rem;
     right: 1rem;
   }
 
