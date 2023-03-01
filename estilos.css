@@ -24,6 +24,21 @@
 a {
   text-decoration: none;
 }
+#setaup {
+  position: fixed;
+  cursor: pointer;
+  bottom: -15rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  background-color: var(--root-color);
+  padding: 1.5rem;
+  clip-path: circle();
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility, bottom;
+  transition-duration: 700ms;
+}
+
 
 svg path[fill='#00DF5E'] {
   fill: var(--root-color);

@@ -35,6 +35,29 @@ const header = document.querySelector('header')
 const heightHeader = header.offsetHeight
 const botaoParanhos = document.querySelector('.logo')
 const divMenu = document.querySelector('.box-menu')
+const OneDiv = document.querySelector('.box-model-1')
+const Setinha = document.querySelector('#setaup')
+const heightOneDiv = OneDiv.offsetHeight
+
+
+window.addEventListener('scroll', () => {
+
+  if(window.scrollY >= heightOneDiv){
+    Setinha.style = 'opacity: 0.7; visibility: visible; bottom: 1rem';
+
+    
+  }
+  if(window.scrollY <= heightOneDiv){
+    Setinha.style = 'opacity: 0; visibility: hidden'
+  }
+
+  if (window.scrollY > heightHeader) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+})
+
 
 for (let ListMenu of listMenu) {
   ListMenu.onclick = () => {
@@ -70,13 +93,6 @@ for (let MenuMobile of menuMobile) {
   }
 }
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > heightHeader) {
-    header.classList.add('scroll')
-  } else {
-    header.classList.remove('scroll')
-  }
-})
 
 window.onresize = () => {
   const widthScreen = window.innerWidth
