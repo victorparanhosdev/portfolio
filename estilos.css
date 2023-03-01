@@ -104,14 +104,12 @@ ul {
   align-items: center;
   height: 7rem;
 }
-
 .logo {
-  width: 6rem;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 6rem;
+  height: 6rem;
 }
 
 .logo svg [fill="black"]{
