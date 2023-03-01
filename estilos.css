@@ -107,10 +107,12 @@ ul {
 
 .logo {
   width: 6rem;
+  display: flex
 }
 
 .logo svg [fill="black"]{
   fill: var(--root-foto-logo);
+
 
 }
 
@@ -545,11 +547,9 @@ footer p {
 @media (max-width:1000px) {
   .img-perfil {
     border-width: 1.5rem;
-  }
-
-  .img-perfil {
     margin: 3rem auto
   }
+
 }
 @media (max-width: 768px) {
   .wrapper-4 {
@@ -607,12 +607,12 @@ footer p {
   }
 
   .box-menu.active .icon-menu-mobile .line-one {
-    transform: rotate(-45deg) translate(-0.4rem, 0.35rem);
+    transform: rotate(-45deg) translate(-0.4rem, 0.4rem);
   }
 
   .box-menu.active .icon-menu-mobile .line-two {
     width: 100%;
-    transform: rotate(45deg) translate(-0.3rem, -0.2rem);
+    transform: rotate(45deg) translate(-0.2rem, -0.2rem);
   }
 
   .box-menu.active .icon-menu-mobile .line-three {

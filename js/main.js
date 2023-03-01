@@ -92,7 +92,8 @@ window.addEventListener("scroll", () => {
 
 
 window.onresize = ()=> {
-  console.log(widthScreen)
+  const widthScreen = window.innerWidth
+  let screenWidth = screen.width
   if (widthScreen > 690) {
     let isClassHidden = document.body.style.overflow == 'hidden'
     if (isClassHidden) {
