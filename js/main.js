@@ -6,8 +6,7 @@ const sr = ScrollReveal({
   easing: 'ease',
   distance: '5rem',
   reset: false,
-  interval: 100,
-  
+  interval: 100
 
 });
 
@@ -21,11 +20,11 @@ sr.reveal('div.txt-wrapper-1, .paragraph-1, div.box-model-1, .btn-githuber, .btn
 
 });
 
+
 sr.reveal('#about, .title-h2, .layout-wrapper-3 > div, .wrapper-4 > div, .wrapper-5 > i', {
   origin: 'bottom',
   distance: '5rem'
 });
-
 
 
 const menuMobile = document.querySelectorAll(".icon-menu-mobile")
