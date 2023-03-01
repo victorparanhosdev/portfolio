@@ -28,13 +28,12 @@ a {
   position: fixed;
   cursor: pointer;
   bottom: -15rem;
-  right: 1.5rem;
+  right: 2rem;
   font-size: 2.5rem;
   background-color: var(--root-color);
   padding: 1.5rem;
   clip-path: circle();
   opacity: 0;
-  z-index: 2;
   visibility: hidden;
   transition-property: opacity, visibility, bottom;
   transition-duration: 700ms;
