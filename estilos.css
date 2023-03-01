@@ -29,9 +29,9 @@ a {
   cursor: pointer;
   bottom: -15rem;
   right: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   background-color: var(--root-color);
-  padding: 1.5rem;
+  padding: 0.5rem;
   clip-path: circle();
   opacity: 0;
   visibility: hidden;
