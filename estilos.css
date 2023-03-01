@@ -107,7 +107,11 @@ ul {
 
 .logo {
   width: 6rem;
-  display: flex
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .logo svg [fill="black"]{
@@ -811,7 +815,7 @@ footer p {
     gap: 4rem;
   }
 
-  svg {
+  .wrapper-4 svg {
     width: 4.5rem;
     height: 4.5rem;
     display: block;
