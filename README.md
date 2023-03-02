@@ -21,4 +21,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 </h1>
 
 
-### Victor Paranhos 👨🏻‍💻
+Victor Paranhos 👨🏻‍💻
