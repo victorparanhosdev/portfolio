@@ -7,9 +7,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
-## 💻 Projeto
+## 💻 Projeto PortFolio
 
-PortFolio feito para mostrar todo meus conhecimentos até aqui.
+- Totalmente Responsivo (Versao Desktop e Mobile).
+- Implemetei Animacões usando a biblioteca do ScrollReveal.
+- Usei Icones do Fontawesome.
+- Fontes Google
 
 ## 🔖 Layout
 
