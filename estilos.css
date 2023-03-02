@@ -39,7 +39,6 @@ a {
   transition-duration: 700ms;
 }
 
-
 svg path[fill='#00DF5E'] {
   fill: var(--root-color);
 }
@@ -254,6 +253,33 @@ ul.btn-menus li:hover a::after {
 .paragraph-1 {
   font-size: 1.8rem;
   color: var(--gray-color);
+  width: max-content;
+  border-right: 0.2rem solid white;
+  padding-right: 0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: digitacao 3s steps(40, end) 900ms backwards, cursor 0.5s 900ms infinite backwards;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+ 
+}
+
+@keyframes cursor {
+
+  0%{
+    border-right: 0.2rem solid white;
+  }
+  50%{
+    border-right: 0.2rem solid transparent;
+  }
+}
+
+@keyframes digitacao {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 71%;
+  }
 }
 
 .txt-wrapper-1 {
@@ -718,6 +744,7 @@ footer p {
   .paragraph-1 {
     font-size: 2rem;
     text-align: center;
+    margin: auto;
   }
 
   .btn-wrapper-1 {

@@ -1,6 +1,6 @@
 //ScrollReveal: Animation Scroll
 
-const sr = ScrollReveal({
+const sr = ScrollReveal({ 
   duration: 900,
   delay: 200,
   easing: 'ease',
@@ -9,25 +9,15 @@ const sr = ScrollReveal({
   interval: 100
 })
 
-sr.reveal('header', {
-  origin: 'left'
-})
-
-sr.reveal(
-  'div.txt-wrapper-1, .paragraph-1, div.box-model-1, .btn-githuber, .btn-linkedin',
-  {
-    origin: 'right',
-    distance: '10rem'
-  }
-)
-
-sr.reveal(
-  '#about, .title-h2, .layout-wrapper-3 article, .wrapper-4 > div, .wrapper-5 > i',
-  {
-    origin: 'bottom',
-    distance: '5rem'
-  }
-)
+sr.reveal('header', {origin: 'left'})
+sr.reveal('div.txt-wrapper-1, .paragraph-1, div.box-model-1, .btn-githuber, .btn-linkedin', {origin: 'right', distance: '10rem'})
+sr.reveal('.fa-html5', {delay:300})
+sr.reveal('.fa-css3', { delay:400})
+sr.reveal('.fa-js', {delay:500})
+sr.reveal('.fa-react', {delay:600})
+sr.reveal('.fa-node-js', {delay:700})
+sr.reveal('.fa-git-alt', {delay:800})
+sr.reveal('#about, .title-h1, .title-h2, .layout-wrapper-3 article, .wrapper-4 > div', { origin: 'bottom' })
 
 const menuMobile = document.querySelectorAll('.icon-menu-mobile')
 const listMenu = document.querySelectorAll('.btn-menus li a')
