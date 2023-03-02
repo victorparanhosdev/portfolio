@@ -259,7 +259,6 @@ ul.btn-menus li:hover a::after {
   overflow: hidden;
   white-space: nowrap;
   animation: digitacao 3s steps(40, end) 900ms backwards, cursor 0.5s 900ms infinite backwards;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
  
 }
 
