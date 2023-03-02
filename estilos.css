@@ -661,20 +661,20 @@ footer p {
     transition-property: opacity, transform;
     transition-duration: 200ms;
     opacity: 0;
-    transform: translateX(-40rem);
+    transform: translateX(-30rem);
   }
 
   .box-menu.active ul.btn-menus li:nth-child(1) a{
-    transition-delay: 200ms;
+    transition-delay: 100ms;
   }
   .box-menu.active ul.btn-menus li:nth-child(2) a{
-    transition-delay: 300ms;
+    transition-delay: 200ms;
   }
   .box-menu.active ul.btn-menus li:nth-child(3) a{
-    transition-delay: 400ms;
+    transition-delay: 300ms;
   }
   .box-menu.active ul.btn-menus li:nth-child(4) a{
-    transition-delay: 500ms;
+    transition-delay: 400ms;
   }
 
   .box-menu.active ul.btn-menus li a{
