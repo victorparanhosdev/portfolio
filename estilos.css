@@ -6,7 +6,7 @@
 }
 
 :root {
-  --var-color: 2;
+  --var-color: 220;
   font-size: 62.5%;
   --white-color: hsl(0, 0%, 95%);
   --gray-color: hsl(0, 0%, 50%);
@@ -626,9 +626,33 @@ footer p {
     border-bottom: 0.1rem solid var(--gray-200-color);
     padding-inline: 1rem;
   }
+  ul.btn-menus li a{
+    transition-property: opacity, transform;
+    transition-duration: 200ms;
+    opacity: 0;
+    transform: translateX(-40rem);
+  }
+
+  .box-menu.active ul.btn-menus li:nth-child(1) a{
+    transition-delay: 200ms;
+  }
+  .box-menu.active ul.btn-menus li:nth-child(2) a{
+    transition-delay: 300ms;
+  }
+  .box-menu.active ul.btn-menus li:nth-child(3) a{
+    transition-delay: 400ms;
+  }
+  .box-menu.active ul.btn-menus li:nth-child(4) a{
+    transition-delay: 500ms;
+  }
+
+  .box-menu.active ul.btn-menus li a{
+    opacity: 1;
+    transform: translateX(0rem);
+  }
 
   ul.btn-menus li a {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .box-menu.active .icon-menu-mobile .line-one {
@@ -667,7 +691,7 @@ footer p {
   ul.btn-menus {
     display: grid;
     place-content: center;
-    gap: 2rem;
+    gap: 3.5rem;
     margin: 2rem auto;
   }
 
@@ -718,11 +742,7 @@ footer p {
   }
 
   section:has(div.box-model-1) {
-    background: radial-gradient(
-      circle at top,
-      var(--dark-color) 87%,
-      var(--root-color-hover) 174%
-    );
+    background: radial-gradient( circle at top, var(--dark-color) 82%, var(--root-color-hover) 174% );
     min-height: 100vh;
     display: grid;
     place-content: center;
@@ -747,11 +767,7 @@ footer p {
   }
 
   section:has(div.box-model-2) {
-    background: radial-gradient(
-      circle at bottom,
-      var(--dark-color) 87%,
-      var(--root-color-hover) 174%
-    );
+    background: radial-gradient( circle at bottom, var(--dark-color) 83%, var(--root-color-hover) 174% )
   }
 
   .aside-wrapper-2 > h2,
