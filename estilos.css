@@ -254,21 +254,21 @@ ul.btn-menus li:hover a::after {
   font-size: 1.8rem;
   color: var(--gray-color);
   width: max-content;
-  border-right: 0.2rem solid white;
+  border-right: 0.1rem solid white;
   padding-right: 0.2rem;
   overflow: hidden;
   white-space: nowrap;
-  animation: digitacao 3s steps(40, end) 900ms backwards, cursor 0.5s 900ms infinite backwards;
+  animation: digitacao 3s steps(40, end) 900ms backwards, cursor 0.5s 1100ms backwards;
  
 }
 
 @keyframes cursor {
 
   0%{
-    border-right: 0.2rem solid white;
+    border-right: 0.1rem solid white;
   }
   50%{
-    border-right: 0.2rem solid transparent;
+    border-right: 0.1rem solid transparent;
   }
 }
 
