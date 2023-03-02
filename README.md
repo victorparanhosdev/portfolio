@@ -9,9 +9,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto PortFolio
 
-- Totalmente Responsivo (Versao Desktop e Mobile).
-- Implemetei Animacões usando a biblioteca do ScrollReveal.
-- Usei Icones do Fontawesome.
+- Totalmente Responsivo (Versao Desktop e Mobile)
+- Animacões usando a biblioteca do ScrollReveal
+- Icones Fontawesome
 - Fontes Google
 
 ## 🔖 Layout
@@ -20,3 +20,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
     <img alt="Layout" src="assets/layout-portfolio.png" width="100%">
 </h1>
 
+
+### Victor Paranhos 👨🏻‍💻
