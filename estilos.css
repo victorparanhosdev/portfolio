@@ -258,23 +258,51 @@ ul.btn-menus li:hover a::after {
   padding-right: 0.2rem;
   overflow: hidden;
   white-space: nowrap;
-  animation: digitacao 3s steps(40, end) 900ms backwards, cursor 3s 900ms alternate;
+  animation: digitacao 3s steps(40, end) 900ms backwards, cursor 3s 900ms forwards;
  
 }
 
 @keyframes cursor {
 
   0%{
-    border-right: 0.1rem solid white;
-  }
-  50%{
     border-right: 0.1rem solid transparent;
   }
-  75%{
+  
+  10%{
+    border-right: 0.1rem solid white;
+  }
+  
+  20%{
+    border-right: 0.1rem solid transparent;
+  }
+  
+  30%{
+    border-right: 0.1rem solid white;
+  }
+  
+  40%{
+    border-right: 0.1rem solid transparent;
+  }
+  
+  50%{
+    border-right: 0.1rem solid white;
+  }
+  
+  60%{
+    border-right: 0.1rem solid transparent;
+  }
+  
+  70%{
+    border-right: 0.1rem solid white;
+  }
+  80%{
+    border-right: 0.1rem solid transparent;
+  }
+  90%{
     border-right: 0.1rem solid white;
   }
   100%{
-    border-right: 0.1rem solid transparent;
+    border: none;
   }
 }
 
