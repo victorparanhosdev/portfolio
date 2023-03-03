@@ -303,6 +303,7 @@ ul.btn-menus li:hover a::after {
   }
   100%{
     border: none;
+    padding: 0;
   }
 }
 
