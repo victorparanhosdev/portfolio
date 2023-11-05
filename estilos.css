@@ -6,7 +6,7 @@
 }
 
 :root {
-  --var-color: 202;
+  --var-color: 2;
   font-size: 62.5%;
   --white-color: hsl(0, 0%, 95%);
   --gray-color: hsl(0, 0%, 50%);
